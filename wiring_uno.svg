@@ -1,0 +1,189 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 1010" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+  <rect width="1100" height="1010" fill="#fbfaf7"/>
+
+  <text x="60" y="48" font-size="26" font-weight="700" fill="#1f2933">SimonMemory — Uno wiring</text>
+  <text x="60" y="74" font-size="14" fill="#65727c">Arduino Uno (SMD/DIP) · 4 LEDs · 4 buttons · passive buzzer · I2C LCD · one common ground</text>
+
+  <!-- board -->
+  <rect x="60" y="100" width="220" height="760" rx="14" fill="#1f2933"/>
+  <text x="170" y="132" text-anchor="middle" font-size="16" font-weight="600" fill="#ffffff">Arduino Uno</text>
+  <text x="170" y="151" text-anchor="middle" font-size="11" fill="#9aa5ad">SMD R3</text>
+
+  <!-- ground rail -->
+  <path d="M880 165 V875" stroke="#65727c" stroke-width="3" fill="none"/>
+  <path d="M862 875 H898" stroke="#65727c" stroke-width="3"/>
+  <path d="M869 883 H891" stroke="#65727c" stroke-width="3"/>
+  <path d="M875 891 H885" stroke="#65727c" stroke-width="3"/>
+  <text x="880" y="914" text-anchor="middle" font-size="11" fill="#65727c">GND</text>
+
+  <!-- ============ LED rows ============ -->
+  <!-- LED 1 -->
+  <g>
+    <text x="262" y="174" text-anchor="end" font-size="12" font-family="Consolas, monospace" fill="#e6edf2">D5</text>
+    <rect x="274" y="164" width="16" height="12" rx="2" fill="#e2c08d"/>
+    <path d="M290 170 H400" stroke="#2f9e44" stroke-width="2.5" fill="none"/>
+    <path d="M400 170 H410 l6 -8 l12 16 l12 -16 l12 16 l12 -16 l12 16 l6 -8 H520" stroke="#2f9e44" stroke-width="2.5" fill="none" stroke-linejoin="round"/>
+    <text x="446" y="196" text-anchor="middle" font-size="10" fill="#65727c">220 Ω</text>
+    <polygon points="522,157 522,183 556,170" fill="#2f9e44"/>
+    <path d="M558 156 V184" stroke="#2f9e44" stroke-width="3"/>
+    <path d="M558 170 H880" stroke="#2f9e44" stroke-width="2.5" fill="none"/>
+    <circle cx="880" cy="170" r="3.5" fill="#65727c"/>
+    <text x="620" y="162" font-size="11" fill="#3d4a54">LED 1 · green</text>
+  </g>
+
+  <!-- LED 2 -->
+  <g>
+    <text x="262" y="219" text-anchor="end" font-size="12" font-family="Consolas, monospace" fill="#e6edf2">D6</text>
+    <rect x="274" y="209" width="16" height="12" rx="2" fill="#e2c08d"/>
+    <path d="M290 215 H400" stroke="#e03131" stroke-width="2.5" fill="none"/>
+    <path d="M400 215 H410 l6 -8 l12 16 l12 -16 l12 16 l12 -16 l12 16 l6 -8 H520" stroke="#e03131" stroke-width="2.5" fill="none" stroke-linejoin="round"/>
+    <text x="446" y="241" text-anchor="middle" font-size="10" fill="#65727c">220 Ω</text>
+    <polygon points="522,202 522,228 556,215" fill="#e03131"/>
+    <path d="M558 201 V229" stroke="#e03131" stroke-width="3"/>
+    <path d="M558 215 H880" stroke="#e03131" stroke-width="2.5" fill="none"/>
+    <circle cx="880" cy="215" r="3.5" fill="#65727c"/>
+    <text x="620" y="207" font-size="11" fill="#3d4a54">LED 2 · red</text>
+  </g>
+
+  <!-- LED 3 -->
+  <g>
+    <text x="262" y="264" text-anchor="end" font-size="12" font-family="Consolas, monospace" fill="#e6edf2">D7</text>
+    <rect x="274" y="254" width="16" height="12" rx="2" fill="#e2c08d"/>
+    <path d="M290 260 H400" stroke="#f08c00" stroke-width="2.5" fill="none"/>
+    <path d="M400 260 H410 l6 -8 l12 16 l12 -16 l12 16 l12 -16 l12 16 l6 -8 H520" stroke="#f08c00" stroke-width="2.5" fill="none" stroke-linejoin="round"/>
+    <text x="446" y="286" text-anchor="middle" font-size="10" fill="#65727c">220 Ω</text>
+    <polygon points="522,247 522,273 556,260" fill="#f08c00"/>
+    <path d="M558 246 V274" stroke="#f08c00" stroke-width="3"/>
+    <path d="M558 260 H880" stroke="#f08c00" stroke-width="2.5" fill="none"/>
+    <circle cx="880" cy="260" r="3.5" fill="#65727c"/>
+    <text x="620" y="252" font-size="11" fill="#3d4a54">LED 3 · yellow</text>
+  </g>
+
+  <!-- LED 4 -->
+  <g>
+    <text x="262" y="309" text-anchor="end" font-size="12" font-family="Consolas, monospace" fill="#e6edf2">D8</text>
+    <rect x="274" y="299" width="16" height="12" rx="2" fill="#e2c08d"/>
+    <path d="M290 305 H400" stroke="#1c7ed6" stroke-width="2.5" fill="none"/>
+    <path d="M400 305 H410 l6 -8 l12 16 l12 -16 l12 16 l12 -16 l12 16 l6 -8 H520" stroke="#1c7ed6" stroke-width="2.5" fill="none" stroke-linejoin="round"/>
+    <text x="446" y="331" text-anchor="middle" font-size="10" fill="#65727c">220 Ω</text>
+    <polygon points="522,292 522,318 556,305" fill="#1c7ed6"/>
+    <path d="M558 291 V319" stroke="#1c7ed6" stroke-width="3"/>
+    <path d="M558 305 H880" stroke="#1c7ed6" stroke-width="2.5" fill="none"/>
+    <circle cx="880" cy="305" r="3.5" fill="#65727c"/>
+    <text x="620" y="297" font-size="11" fill="#3d4a54">LED 4 · blue</text>
+  </g>
+
+  <!-- ============ BUTTON rows ============ -->
+  <!-- BTN 1 -->
+  <g>
+    <text x="262" y="404" text-anchor="end" font-size="12" font-family="Consolas, monospace" fill="#e6edf2">D2</text>
+    <rect x="274" y="394" width="16" height="12" rx="2" fill="#e2c08d"/>
+    <path d="M290 400 H496" stroke="#2f9e44" stroke-width="2.5" fill="none"/>
+    <circle cx="500" cy="400" r="4" fill="#2f9e44"/>
+    <circle cx="560" cy="400" r="4" fill="#2f9e44"/>
+    <path d="M504 396 L552 380" stroke="#2f9e44" stroke-width="2.5"/>
+    <path d="M564 400 H880" stroke="#2f9e44" stroke-width="2.5" fill="none"/>
+    <circle cx="880" cy="400" r="3.5" fill="#65727c"/>
+    <text x="620" y="392" font-size="11" fill="#3d4a54">Button 1 · green</text>
+  </g>
+
+  <!-- BTN 2 -->
+  <g>
+    <text x="262" y="449" text-anchor="end" font-size="12" font-family="Consolas, monospace" fill="#e6edf2">D3</text>
+    <rect x="274" y="439" width="16" height="12" rx="2" fill="#e2c08d"/>
+    <path d="M290 445 H496" stroke="#e03131" stroke-width="2.5" fill="none"/>
+    <circle cx="500" cy="445" r="4" fill="#e03131"/>
+    <circle cx="560" cy="445" r="4" fill="#e03131"/>
+    <path d="M504 441 L552 425" stroke="#e03131" stroke-width="2.5"/>
+    <path d="M564 445 H880" stroke="#e03131" stroke-width="2.5" fill="none"/>
+    <circle cx="880" cy="445" r="3.5" fill="#65727c"/>
+    <text x="620" y="437" font-size="11" fill="#3d4a54">Button 2 · red</text>
+  </g>
+
+  <!-- BTN 3 -->
+  <g>
+    <text x="262" y="494" text-anchor="end" font-size="12" font-family="Consolas, monospace" fill="#e6edf2">D4</text>
+    <rect x="274" y="484" width="16" height="12" rx="2" fill="#e2c08d"/>
+    <path d="M290 490 H496" stroke="#f08c00" stroke-width="2.5" fill="none"/>
+    <circle cx="500" cy="490" r="4" fill="#f08c00"/>
+    <circle cx="560" cy="490" r="4" fill="#f08c00"/>
+    <path d="M504 486 L552 470" stroke="#f08c00" stroke-width="2.5"/>
+    <path d="M564 490 H880" stroke="#f08c00" stroke-width="2.5" fill="none"/>
+    <circle cx="880" cy="490" r="3.5" fill="#65727c"/>
+    <text x="620" y="482" font-size="11" fill="#3d4a54">Button 3 · yellow</text>
+  </g>
+
+  <!-- BTN 4 -->
+  <g>
+    <text x="262" y="539" text-anchor="end" font-size="12" font-family="Consolas, monospace" fill="#e6edf2">D9</text>
+    <rect x="274" y="529" width="16" height="12" rx="2" fill="#e2c08d"/>
+    <path d="M290 535 H496" stroke="#1c7ed6" stroke-width="2.5" fill="none"/>
+    <circle cx="500" cy="535" r="4" fill="#1c7ed6"/>
+    <circle cx="560" cy="535" r="4" fill="#1c7ed6"/>
+    <path d="M504 531 L552 515" stroke="#1c7ed6" stroke-width="2.5"/>
+    <path d="M564 535 H880" stroke="#1c7ed6" stroke-width="2.5" fill="none"/>
+    <circle cx="880" cy="535" r="3.5" fill="#65727c"/>
+    <text x="620" y="527" font-size="11" fill="#3d4a54">Button 4 · blue</text>
+  </g>
+
+  <!-- ============ BUZZER ============ -->
+  <g>
+    <text x="262" y="624" text-anchor="end" font-size="12" font-family="Consolas, monospace" fill="#e6edf2">D10</text>
+    <rect x="274" y="614" width="16" height="12" rx="2" fill="#e2c08d"/>
+    <path d="M290 620 H532" stroke="#e8590c" stroke-width="2.5" fill="none"/>
+    <circle cx="560" cy="620" r="28" fill="none" stroke="#e8590c" stroke-width="2.5"/>
+    <text x="560" y="626" text-anchor="middle" font-size="20" font-weight="600" fill="#e8590c">+</text>
+    <path d="M588 620 H880" stroke="#e8590c" stroke-width="2.5" fill="none"/>
+    <circle cx="880" cy="620" r="3.5" fill="#65727c"/>
+    <text x="620" y="612" font-size="11" fill="#3d4a54">Passive buzzer</text>
+  </g>
+
+  <!-- ============ LCD module ============ -->
+  <rect x="600" y="650" width="250" height="210" rx="10" fill="#e7f5ff" stroke="#1971c2" stroke-width="2"/>
+  <text x="725" y="674" text-anchor="middle" font-size="13" font-weight="700" fill="#1864ab">1602 LCD + I2C backpack</text>
+  <text x="725" y="692" text-anchor="middle" font-size="10" fill="#5c7cfa">PCF8574 · addr 0x27 (or 0x3F)</text>
+
+  <!-- LCD SDA -->
+  <g>
+    <text x="262" y="694" text-anchor="end" font-size="12" font-family="Consolas, monospace" fill="#e6edf2">A4 (SDA)</text>
+    <rect x="274" y="680" width="16" height="12" rx="2" fill="#e2c08d"/>
+    <path d="M290 690 H600" stroke="#7048e8" stroke-width="2.5" fill="none"/>
+    <circle cx="592" cy="690" r="3.5" fill="#7048e8"/>
+    <text x="612" y="694" font-size="11" font-weight="600" fill="#5f3dc4">SDA</text>
+  </g>
+
+  <!-- LCD SCL -->
+  <g>
+    <text x="262" y="739" text-anchor="end" font-size="12" font-family="Consolas, monospace" fill="#e6edf2">A5 (SCL)</text>
+    <rect x="274" y="725" width="16" height="12" rx="2" fill="#e2c08d"/>
+    <path d="M290 735 H600" stroke="#0c8599" stroke-width="2.5" fill="none"/>
+    <circle cx="592" cy="735" r="3.5" fill="#0c8599"/>
+    <text x="612" y="739" font-size="11" font-weight="600" fill="#0b7285">SCL</text>
+  </g>
+
+  <!-- LCD VCC -->
+  <g>
+    <text x="262" y="784" text-anchor="end" font-size="12" font-family="Consolas, monospace" fill="#e6edf2">5V</text>
+    <rect x="274" y="770" width="16" height="12" rx="2" fill="#e2c08d"/>
+    <path d="M290 780 H600" stroke="#e03131" stroke-width="2.5" fill="none"/>
+    <circle cx="592" cy="780" r="3.5" fill="#e03131"/>
+    <text x="612" y="784" font-size="11" font-weight="600" fill="#c92a2a">VCC · 5V</text>
+  </g>
+
+  <!-- LCD GND (+ jumper to rail) -->
+  <g>
+    <text x="262" y="829" text-anchor="end" font-size="12" font-family="Consolas, monospace" fill="#e6edf2">GND</text>
+    <rect x="274" y="815" width="16" height="12" rx="2" fill="#e2c08d"/>
+    <path d="M290 825 H600" stroke="#65727c" stroke-width="2.5" fill="none"/>
+    <circle cx="592" cy="825" r="3.5" fill="#65727c"/>
+    <text x="612" y="829" font-size="11" font-weight="600" fill="#495057">GND</text>
+    <path d="M592 825 V875 H880" stroke="#65727c" stroke-width="2.5" fill="none"/>
+    <circle cx="880" cy="875" r="3.5" fill="#65727c"/>
+  </g>
+
+  <text x="725" y="850" text-anchor="middle" font-size="10" fill="#868e96">turn contrast pot if blank</text>
+
+  <!-- notes -->
+  <text x="60" y="950" font-size="12" fill="#3d4a54">LED: long leg (anode) toward the Uno via 220 Ω (~14 mA at 5V) · Buttons straddle the middle gap, switch to GND · Buzzer: passive piezo</text>
+  <text x="60" y="972" font-size="12" fill="#3d4a54">LCD: VCC→5V · GND→rail · SDA→A4 · SCL→A5 (or the SDA/SCL pins by the USB port, same net) · scan for 0x27/0x3F</text>
+</svg>
